@@ -996,7 +996,7 @@ module$contents$google3$third_party$apiai$ui$legacy$src$main$webapp$js$agentDemo
   };
   return a() + a() + "-" + a() + "-" + a() + "-" + a() + "-" + a() + a() + a()
 };
-module$contents$google3$third_party$apiai$ui$legacy$src$main$webapp$js$agentDemoApp$App_App.API_URL = "https://console.dialogflow.com/api-client/demo/embedded/2d426668-7692-441d-b882-c2b5fc2a27fc" + "/demoQuery";
+module$contents$google3$third_party$apiai$ui$legacy$src$main$webapp$js$agentDemoApp$App_App.API_URL = "https://console.dialogflow.com/api-client/demo/embedded/6d661c15-a151-48fc-8ec4-6465d00f54ce" + "/demoQuery";
 module$contents$google3$third_party$apiai$ui$legacy$src$main$webapp$js$agentDemoApp$App_App.DEFAULT_ERROR = "Sorry, it seemed like there was an error during request.";
 module$contents$google3$third_party$apiai$ui$legacy$src$main$webapp$js$agentDemoApp$App_App.DEFAULT_NO_ANSWER = "[empty response]";
 module$contents$google3$third_party$apiai$ui$legacy$src$main$webapp$js$agentDemoApp$App_App.HTTP_STATUS = {
