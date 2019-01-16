@@ -1,0 +1,155 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="referrer" content="no-referrer">
+    <title>Asrsti Banking Demo</title>
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/v1/238382/ASRSTIFINLtransparnt700_gjsfbo.png"/>
+
+    <meta property="og:title" content="Banking"/>
+    <meta property="og:description" content="The agent handles requests about transfers, balances and credit card payment due dates."/>
+    <meta property="og:locale" content="en"/>
+    <meta property="og:image" content="" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">.collect-chat-body-noscroll{position:fixed;overflow:hidden;top:0;right:0;bottom:0;left:0}#collect-chat-iframe{z-index:2147483000;position:absolute;padding:0;margin:0;left:0;right:0;width:100%!important;height:100%!important;border:none;border-radius:6px!important;visibility:visible!important;opacity:1!important;display:block!important}#collect-chat-frame-tint{position:fixed;width:100%;height:100%;top:0;bottom:0;right:0;background:#000;background:hsla(0,0%,100%,.45);z-index:1004;display:none;left:0}#collect-chat-launcher-container.collect-chat-launcher-center{bottom:50%!important;right:0!important}#collect-chat-launcher-container.collect-chat-launcher-center .collect-chat-launcher{border-radius:8px 0 0 8px}#collect-chat-launcher-container.collect-chat-launcher-center.collect-chat-avatar-launcher #collect-chat-launcher{border-radius:50% 0 0 50%}#collect-chat-frame-wrap{display:block!important;position:relative!important;border:none;background-repeat:no-repeat;background-color:#fff;height:100%;width:100%;background-position:150px 200px;visibility:visible!important;opacity:1!important}#collect-chat-frame-container{z-index:2147483000;overflow:auto!important;opacity:0;transform:translateY(5%);position:fixed!important;bottom:85px;right:20px;max-height:610px;min-height:280px;margin:0;height:calc(100% - 90px - 20px);width:377px;border-radius:8px;box-shadow:0 5px 40px rgba(0,0,0,.16)!important;transition:transform .2s ease-in-out;transition-property:transform,opacity;visibility:visible!important;opacity:1!important}#collect-chat-frame-container.collect-chat-frame-container-active{display:block;opacity:1;transform:translateY(0)}#collect-chat-frame-container.collect-chat-frame-nolauncher{bottom:20px}#collect-chat-frame-container.collect-chat-frame-center{margin-left:auto;margin-right:auto;left:0;right:0;top:12%;width:500px}#collect-chat-frame-container.collect-chat-frame-left{left:20px;right:auto}#collect-chat-launcher-container.collect-chat-launcher-left{left:20px;right:auto;flex-direction:row-reverse}@media only screen and (max-device-width:667px),screen and (max-width:450px){#collect-chat-frame-container.collect-chat-frame-container-active{width:100%!important;height:100%!important;left:0!important;right:0!important;top:0!important;bottom:0!important;border-radius:0;max-height:none}}@-webkit-keyframes moveFromBottomFade{0%{opacity:.2;-webkit-transform:translateY(5%)}to{opacity:1;-webkit-transform:translateY(0)}}@keyframes moveFromBottomFade{0%{opacity:.2;transform:translateY(5%)}to{opacity:1;transform:translateY(0)}}#collect-chat-launcher-container{position:fixed;bottom:20px;right:20px;direction:ltr!important;z-index:2147482999}#collect-chat-launcher-container.collect-chat-nolauncher{display:none}#collect-chat-launcher-container .collect-chat-launcher{font-family:Open Sans,sans-serif;height:42px;visibility:hidden;-webkit-transform:translateZ(0);border-radius:5em;cursor:pointer;padding:0 20px;transition:transform .15s ease-in-out,box-shadow .15s ease-in-out!important}#collect-chat-launcher-container .collect-chat-launcher:hover{box-shadow:0 4px 42px 0 rgba(0,0,0,.25)!important}#collect-chat-launcher-container.collect-chat-launcher-enabled #collect-chat-launcher{visibility:visible!important;animation:launcher-frame-appear .25s ease forwards}@-webkit-keyframes launcher-frame-appear{0%{opacity:0;-webkit-transform:scale(.5);transform:scale(.5)}to{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}@keyframes launcher-frame-appear{0%{opacity:0;-webkit-transform:scale(.5);transform:scale(.5)}to{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}.collect-chat-flex-center,.collect-chat-flex-end{display:-webkit-box;display:-ms-flexbox;display:flex;align-items:center}.collect-chat-flex-end{justify-content:flex-end}.collect-chat-flex-center{justify-content:center}#collect-chat-launcher-container .collect-chat-launcher-button,#collect-chat-offline-container .collect-chat-launcher-button{right:0;width:18px;height:18px;margin:2px 2px 2px 0;background-position:50%;background-repeat:no-repeat}#collect-chat-launcher-container #collect-chat-launcher-text{color:#fff;font-weight:400;margin-left:4px;margin-right:4px;font-size:18px;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}@media only screen and (max-device-width:667px),screen and (max-width:450px){#collect-chat-launcher-container #collect-chat-launcher-text{display:none}#collect-chat-launcher-container .collect-chat-launcher{width:60px;height:60px;padding:0}#collect-chat-launcher-container .collect-chat-launcher-button{width:30px;height:30px}}#collect-chat-launcher-container.collect-chat-launcher-enabled .collect-chat-launcher-button{background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4KCjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0iTGF5ZXJfMSIKICAgeD0iMHB4IgogICB5PSIwcHgiCiAgIHZpZXdCb3g9IjAgMCA0OSA0OSIKICAgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNDkgNDkiCiAgIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgIGlua3NjYXBlOnZlcnNpb249IjAuOTEgcjEzNzI1IgogICBzb2RpcG9kaTpkb2NuYW1lPSJvcGVuLnN2ZyI+PG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhMzQ2MSI+PHJkZjpSREY+PGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPjxkYzpmb3JtYXQ+aW1hZ2Uvc3ZnK3htbDwvZGM6Zm9ybWF0PjxkYzp0eXBlCiAgICAgICAgICAgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIgLz48L2NjOldvcms+PC9yZGY6UkRGPjwvbWV0YWRhdGE+PGRlZnMKICAgICBpZD0iZGVmczM0NTkiIC8+PHNvZGlwb2RpOm5hbWVkdmlldwogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzY2NjY2NiIKICAgICBib3JkZXJvcGFjaXR5PSIxIgogICAgIG9iamVjdHRvbGVyYW5jZT0iMTAiCiAgICAgZ3JpZHRvbGVyYW5jZT0iMTAiCiAgICAgZ3VpZGV0b2xlcmFuY2U9IjEwIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwIgogICAgIGlua3NjYXBlOnBhZ2VzaGFkb3c9IjIiCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIxMzk0IgogICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjgzNiIKICAgICBpZD0ibmFtZWR2aWV3MzQ1NyIKICAgICBzaG93Z3JpZD0iZmFsc2UiCiAgICAgaW5rc2NhcGU6em9vbT0iMTguNzMxMTE0IgogICAgIGlua3NjYXBlOmN4PSIxNS42MzI3OTEiCiAgICAgaW5rc2NhcGU6Y3k9IjYuMzYzNTg5OCIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iMCIKICAgICBpbmtzY2FwZTp3aW5kb3cteT0iMCIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIwIgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9Ikdyb3VwIiAvPjxnCiAgICAgaWQ9IlBhZ2UtMSIKICAgICB0cmFuc2Zvcm09Im1hdHJpeCgwLC0xLC0xLDAsNDkuMzYyNDY2LDUxLjcxNjM3MikiPjxnCiAgICAgICBpZD0iR3JvdXAiCiAgICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyLDEpIj48cGF0aAogICAgICAgICBkPSJNIDI1LDEgQyAxMi4zLDEgMiwxMS4zIDIsMjQgMS45NjI0ODUsMjcuNzc0OTA3IDIuMDI0NDU2LDI3Ljg3Mjc5MyAxLjk5ODMxMiwzMy4zOTg4MDMgTCAyLDQ2LjggbCAxMS4zLC0zIGMgMTAuOSw2LjUgMjUsMi44IDMxLjUsLTguMSBDIDUxLjMsMjQuOCA0Ny42LDEwLjcgMzYuNyw0LjIgMzMuMSwyLjEgMjkuMSwxIDI1LDEgbCAwLDAgeiIKICAgICAgICAgaWQ9IlNoYXBlIgogICAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgICBzdHlsZT0iZmlsbDojZmZmZmZmO3N0cm9rZTojZmZmZmZmO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1vcGFjaXR5OjAiIC8+PHBhdGgKICAgICAgICAgaWQ9IlNoYXBlXzFfIgogICAgICAgICBkPSJtIDIzLjQ2OTk1NCwzNC4yMjQ5NjEgYyAtNS41LDAgLTEwLC00LjUgLTEwLC0xMCAwLC01LjUgNC41LC0xMCAxMCwtMTAiCiAgICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICAgIHN0eWxlPSJmaWxsOiM2NjY2NjY7c3Ryb2tlOiM2NjY2NjY7c3Ryb2tlLXdpZHRoOjI7b3BhY2l0eTowLjMwMTk2MDc4IiAvPjwvZz48L2c+PC9zdmc+)}#collect-chat-launcher-container #collect-chat-launcher-close{display:none;width:20px;height:20px;z-index:2147483001;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAYFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////98JRy6AAAAH3RSTlMAAQcICQoMICUmLFlbXF5fYWJni52eoKOlptfe9fn9V8PhdwAAAQFJREFUSImN1dkSgjAMheFUccENccM97/+WWsDaNTlctRffDMMkP0Tfp5oS9Czcafa4Q2bHWyeYEbNj5o0TiLGCee2EbgbRm+N4VMxP8GtO5oaYxgn71RATCsTEQjep0ExOyGafFZIpibIpi5KRRN7IImdaRaRGF7FBRGAqTPjmCQrfoCIxgIgMJAIDCqKDIw+wia33YlgTfYGZUCAmFrr5T8kK6ls4iVgTw0lETDy7ukmnXTO5/TBXyeQ3SjKlHSyb8taWjLTneSOXwXSp0VqSGqCJkYGaGJj8P0owE6rfgPDMydBo9CYO5mzsxRqkidZczHCp31gTOyeIlmATm158ABLxYq/PITDxAAAAAElFTkSuQmCC);cursor:pointer;background-size:8px;background-repeat:no-repeat;background-position:50%;position:absolute;top:3px;left:-30px;right:auto;background-color:#afafaf;border-radius:50%;box-shadow:0 2px 6px 0 rgba(0,0,0,.4)}#collect-chat-launcher-container.collect-chat-launcher-left #collect-chat-launcher-close{right:-30px;left:auto}#collect-chat-frame-container #collect-chat-widget-close{right:10px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAYFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////98JRy6AAAAH3RSTlMAAQcICQoMICUmLFlbXF5fYWJni52eoKOlptfe9fn9V8PhdwAAAQFJREFUSImN1dkSgjAMheFUccENccM97/+WWsDaNTlctRffDMMkP0Tfp5oS9Czcafa4Q2bHWyeYEbNj5o0TiLGCee2EbgbRm+N4VMxP8GtO5oaYxgn71RATCsTEQjep0ExOyGafFZIpibIpi5KRRN7IImdaRaRGF7FBRGAqTPjmCQrfoCIxgIgMJAIDCqKDIw+wia33YlgTfYGZUCAmFrr5T8kK6ls4iVgTw0lETDy7ukmnXTO5/TBXyeQ3SjKlHSyb8taWjLTneSOXwXSp0VqSGqCJkYGaGJj8P0owE6rfgPDMydBo9CYO5mzsxRqkidZczHCp31gTOyeIlmATm158ABLxYq/PITDxAAAAAElFTkSuQmCC)}#collect-chat-frame-container #collect-chat-launcher-restart,#collect-chat-frame-container #collect-chat-widget-close{z-index:2147483001;cursor:pointer;background-size:15px;background-repeat:no-repeat;background-position:50%;position:absolute;top:10px;width:30px;height:30px;background-color:#666;border-radius:50%}#collect-chat-frame-container #collect-chat-launcher-restart{right:50px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAABg1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8aT76cAAAAgHRSTlMAAQIDBAUGCAkKCwwNDg8QEhMUFRYXGx0eICMkJicpKiwtLjAxNDU2Nzg5Oj4/QEFERUlKS05PUFFSVllbXF1hYmlrbXd7fn+ChYiOlZiam52eoKKlpqutr7CytLW3ubq8vsDBw8XHyMrOz9PV19na3N7i5Obo6evt7/Hz9fn7/adVg2MAAAIdSURBVBgZrcEHV9NQAAbQL6sIFlpGGWpFceJ44kasooAIKIoo4kRQBJRimS2b76fb99LSJE2KOcd7Ua72St/Yr7W9zaUvz+826/AwT8KjqS9Ll1dnNDiYPwVcTk2x3PptHUXmHAUc6ibpb/UsbNYcKVByj8FGDeRZ8yQFivQ3rCQTB6x55gkURGZZtD3UWW9pgB5N9mVYtNNqLVASsEXSLJhu1+DQ/JYFBxkqAooxR9tKO7xaFukioLyj7YWOctoQnQSkFG098PeADgJ59bTdRJAnLBHIm6aSQpBjf1giAJyjMoog1ct0EAAWKGVNBKhZoZMAWqh0IsDxVboIYJDSEgJE1+gmoO1SEvBXu0EPgQYqFnzFsvQS6KL0Gb7iOZYRGKCUgp/6TZYTmKTUAT8n2n3UIE2pESHkKEURwj6laoSQoxRFCGlKjQhhklIHQhiglEIIXZQ+IYQGKhb+nbZL6TqOYrwekxIABimlcZQ7lPZ1AC1ULqMybZXSMKQFShsGKnpMJQHpPJWXqCRO5T1sM1R6EMxapJKArYG2Gwii/6DyDEWPaOuGv6oZKssGDk3QNqLDR2uWykECJcY8bZkkvCLDLLgIp8gSC6ZOa3CIPd1lwS24RWZZtDV4KW5q0MzqZO93HroGL32clWy1wUc3g32ogq/YR/rbFAiU/MZy2w9NVNLUn6PLxAUdR6q72j/+e31vZ+XryP02A//DXzg8tfrPUp/4AAAAAElFTkSuQmCC)}#collect-chat-launcher-container.collect-chat-avatar-launcher,#collect-chat-launcher-container.collect-chat-launcher-notext{bottom:15px}#collect-chat-launcher-container.collect-chat-avatar-launcher #collect-chat-launcher,#collect-chat-launcher-container.collect-chat-launcher-notext #collect-chat-launcher{padding:0;height:auto}#collect-chat-launcher-container.collect-chat-launcher-notext .collect-chat-launcher-button{width:55px;height:55px;background-size:40px;margin:3px}#collect-chat-launcher-container.collect-chat-avatar-launcher .collect-chat-launcher-button{width:60px;height:60px;background-size:60px;border-radius:50%!important;margin:-1px;box-shadow:0 0 20px 0 rgba(0,0,0,.15)}#collect-chat-launcher-container.collect-chat-avatar-launcher.collect-chat-launcher-center .collect-chat-launcher-button{margin:2px}#collect-chat-launcher-container.collect-chat-launcher-notext #collect-chat-launcher-text{display:none}#collect-chat-launcher-container.collect-chat-avatar-launcher .collect-chat-launcher-button:after{content:"";position:absolute;width:15px;height:15px;border-radius:50%;background-color:#2ecc71;bottom:5px;right:-1px}#collect-chat-launcher-container #collect-chat-avatar-text{font-family:Open Sans,sans-serif;font-size:16px!important;line-height:24px!important;font-weight:400;position:relative;z-index:2147482999;cursor:pointer;background-color:#fff;color:#666;padding:7px 10px;border-radius:.625rem!important;white-space:normal;text-overflow:ellipsis;max-width:300px;margin:0 15px;display:none;box-shadow:0 0 20px 0 rgba(0,0,0,.15);animation:launcher-frame-appear .25s ease forwards}#collect-chat-launcher-container.collect-chat-launcher-enabled.collect-chat-avatar-launcher #collect-chat-avatar-text{display:block}#collect-chat-launcher-container.collect-chat-avatar-launcher #collect-chat-launcher-text{display:none}#collect-chat-launcher-container #collect-chat-avatar-text:before{content:" ";position:absolute;width:0;height:0;left:auto;right:-15px;top:34%;bottom:auto;border:8px solid;border-color:transparent transparent transparent #fff}@media only screen and (max-device-width:667px),screen and (max-width:450px){#collect-chat-launcher-container #collect-chat-launcher-close{display:block!important}#collect-chat-launcher-container #collect-chat-avatar-text{max-width:190px}}#collect-chat-launcher-container.collect-chat-launcher-left #collect-chat-avatar-text:before{left:-15px;border-color:transparent #fff transparent transparent}</style>
+    <style>
+
+        @-moz-keyframes blink {0%{opacity:1;} 50%{opacity:0;} 100%{opacity:1;}} /* Firefox */
+        @-webkit-keyframes blink {0%{opacity:1;} 50%{opacity:0;} 100%{opacity:1;}} /* Webkit */
+        @-ms-keyframes blink {0%{opacity:1;} 50%{opacity:0;} 100%{opacity:1;}} /* IE */
+        @keyframes blink {0%{opacity:1;} 50%{opacity:0;} 100%{opacity:1;}} /* Opera and prob css3 final iteration */
+
+        #preloader {
+            background: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 999999;
+            opacity: 1;
+            filter: alpha(opacity=100);
+            -webkit-transition: opacity 500ms ease;
+            transition: opacity 500ms ease;
+        }
+
+        #preloader .logo {
+            display: block;
+            width: 109px;
+            height: 39px;
+            background-repeat: no-repeat;
+            background-image: url('https://console.dialogflow.com/api-client/assets/img/logo@2x-black.png');
+            background-size: contain;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -20px 0 0 -55px;
+            -moz-transition:all 1s ease-in-out;
+            -webkit-transition:all 1s ease-in-out;
+            -o-transition:all 1s ease-in-out;
+            -ms-transition:all 1s ease-in-out;
+            transition:all 1s ease-in-out;
+            /* order: name, direction, duration, iteration-count, timing-function */
+            -moz-animation:blink normal 2s infinite ease-in-out; /* Firefox */
+            -webkit-animation:blink normal 2s infinite ease-in-out; /* Webkit */
+            -ms-animation:blink normal 2s infinite ease-in-out; /* IE */
+            animation:blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+        }
+
+        noscript h1 {
+            padding: 20px;
+        }
+    </style>
+    <!--[if lte IE 7]>
+    <script src="https://assets.dialogflow.com/b/dialogflow_ui_20181211_1700_butterbeer_RC01/js/agentDemoApp/promise.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+
+<div id="preloader">
+    <noscript>
+        <h1>This application does'not work without javascript</h1>
+    </noscript>
+    <div class="logo"></div>
+</div>
+
+<div class="b-agent-demo">
+
+    <div class="b-agent-demo_header">
+        <div class="b-agent-demo_header-icon">
+            <div class="b-agent-demo_header-icon-align-helper">
+                <img id="agent-avatar" style="display:none;" src="https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/v1/238382/ASRSTIFINLtransparnt700_gjsfbo.png" />
+                 <img id="agent-avatar" src="https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_200,w_200,f_auto,q_auto/v1/238382/ASRSTIFINLtransparnt700_gjsfbo.png" />
+            </div>
+        </div>
+        <div class="b-agent-demo_header-wrapper">
+            <div class="b-agent-demo_header-agent-name">Dan,your Banking advisor at Asrsti Blockchain Bank</div>
+            <div class="b-agent-demo_header-description">Dan is here to help with and handle requests about transfers, balances and credit card payment due dates.</div>
+        </div>
+    </div>
+   
+    <div class="b-agent-demo_result" id="resultWrapper">
+        <table class="b-agent-demo_result-table"><tr><td  id="result"></td></tr></table>
+    </div>
+    <div class="clearfix"></div>
+    <div class="b-agent-demo_input">
+        <form id="agentDemoForm">
+            <input type="text" name="q" id="query" placeholder="Ask something..."/>
+            <i class="b-agent-demo_input-microphone material-icons-extended" id="mic">mic</i>
+
+            <!--div class="b-agent-demo_input-microphone material-icons-extended mic-black" id="mic"></div-->
+        </form>
+    </div>
+</div>
+
+<noscript id="deferred-styles">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Extended" rel="stylesheet">
+    <link href='https://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+</noscript>
+<script>
+    AGENT_LANGUAGE = "en";
+    AGENT_AVATAR_ID = "";
+    SERVICE_BASE_URL = "https://console.dialogflow.com/api-client/";
+
+    // non-blocking CSS delivery
+
+    var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+    };
+
+    var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+            window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+
+    if (raf) {
+        raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+    } else {
+        window.addEventListener('load', loadDeferredStyles);
+    }
+
+    window['addStyleString'] = function(str) {
+      var node = document.createElement('style');
+      node.innerHTML = str;
+      document.head.appendChild(node);
+    };
+</script>
+<script defer src="/demos/js/chatbot.js"></script>
+<!-- Google Analytics -->
+<script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-50971730-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+</body>
+</html>
