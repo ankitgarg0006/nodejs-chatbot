@@ -39,7 +39,7 @@ function serverHandler(request, response) {
     // even if external codes are overriding it
     config = getValuesFromConfigJson(jsonPath);
     config = getBashParameters(config, BASH_COLORS_HELPER);
-
+  response.setHeader('Access-Control-Allow-Origin', '*');
     // HTTP_GET handling code goes below
     try {
         var uri, filename;
